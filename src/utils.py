@@ -1,19 +1,25 @@
 from loader import load_json
 
+nodes = load_json("nodes.json")
 aliases = load_json("aliases.json")
 
 
 def normalize_place(place: str) -> str:
     place = place.strip()
-
     return aliases.get(place, place)
 
 
-def print_path(path: list[str]) -> None:
-    print("\n최적 경로")
+def print_path(path: list[str], cost: int) -> None:
+    print("=" * 40)
+    print("=== 최적 경로 ===")
+    print("=" * 40)
 
-    for place in path[:-1]:
-        print(f"{place}")
-        print("↓")
+    for i, place in enumerate(path):
+        floor = nodes[place]["floor"]
+        print(f"{place} ({floor}층)")
 
-    print(path[-1])
+        if i != len(path) - 1:
+            print("↓")
+
+    print()
+    print(f"총 이동 비용 : {cost}")
