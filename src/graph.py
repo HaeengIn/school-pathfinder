@@ -12,7 +12,7 @@ def create_graph():
         graph.add_node(name, floor=info["floor"])
 
     # Add edges
-    for start, end, weight in edges.items():
+    for start, end, weight in edges:
         graph.add_edge(start, end, weight=weight)
 
     return graph
