@@ -1,5 +1,5 @@
 import networkx
-from graph import create_graph
+from src.graph import create_graph
 
 graph = create_graph()
 

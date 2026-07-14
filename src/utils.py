@@ -1,4 +1,4 @@
-from loader import load_json
+from src.loader import load_json
 
 nodes = load_json("nodes.json")
 aliases = load_json("aliases.json")
@@ -11,7 +11,7 @@ def normalize_place(place: str) -> str:
 
 def print_path(path: list[str], cost: int) -> None:
     print("=" * 40)
-    print("=== 최적 경로 ===")
+    print(" " * 11, "=== 최적경로 ===")
     print("=" * 40)
 
     for i, place in enumerate(path):

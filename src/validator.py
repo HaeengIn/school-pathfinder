@@ -1,5 +1,5 @@
-from loader import load_json
-from utils import normalize_place
+from src.loader import load_json
+from src.utils import normalize_place
 
 nodes = load_json("nodes.json")
 

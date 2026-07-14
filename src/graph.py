@@ -1,5 +1,5 @@
 import networkx
-from loader import load_json
+from src.loader import load_json
 
 
 def create_graph():
