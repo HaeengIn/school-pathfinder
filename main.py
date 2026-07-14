@@ -1,11 +1,11 @@
-from pathfinder import find_path
-from utils import print_path
-from validator import validate_place
+from src.pathfinder import find_path
+from src.utils import print_path
+from src.validator import validate_place
 
 
 def main():
     print("=" * 40)
-    print("학교 최적 경로 탐색 프로그램")
+    print(" " * 5, "학교 최적 경로 탐색 프로그램")
     print("=" * 40)
 
     while True:
