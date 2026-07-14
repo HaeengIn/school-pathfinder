@@ -9,9 +9,9 @@
    ```bash
    pip install networkx
    ```
-3. Move to `src` and run `main.py`
+3. Run `main.py`
    ```bash
-   cd src && python main.py
+   python main.py
    ```
 ## Contribution
 1. Clone repository
@@ -23,6 +23,6 @@
    uv sync --frozen
    ```
 ## License
-Read [License](LICENSE) document for full License.
+Read [LICENSE](LICENSE) document for full License.
 ## Copyright
 - [school_map.jpg](img/school_map.jpg) : 2026 &copy; Gyoha High School
