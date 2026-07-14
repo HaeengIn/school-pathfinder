@@ -1,4 +1,5 @@
 from src.loader import load_json
+from src.clear_console import clear
 
 nodes = load_json("nodes.json")
 aliases = load_json("aliases.json")
@@ -10,6 +11,7 @@ def normalize_place(place: str) -> str:
 
 
 def print_path(path: list[str], cost: int) -> None:
+    clear()
     print("=" * 40)
     print(" " * 11, "=== 최적경로 ===")
     print("=" * 40)
@@ -23,3 +25,4 @@ def print_path(path: list[str], cost: int) -> None:
 
     print()
     print(f"총 이동 비용 : {cost}")
+    print("=" * 40)

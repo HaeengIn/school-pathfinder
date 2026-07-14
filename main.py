@@ -1,6 +1,7 @@
 from src.pathfinder import find_path
 from src.utils import print_path
 from src.validator import validate_place
+from src.clear_console import clear
 
 
 def main():
@@ -41,4 +42,5 @@ def main():
 
 
 if __name__ == "__main__":
+    clear()
     main()
